@@ -25,7 +25,7 @@ Book CRUD:
 # Postman HTTP Request Body (Example):
 User POST & PUT Raw Data:
 - POST: http://localhost:999/api_grp1/users
-
+---
 {      
         "name": "Kritika Maurya",
         "emailId": "mkriti12@gmail.com",
@@ -50,6 +50,7 @@ User POST & PUT Raw Data:
 }
 		]
     }
+---
 
 - PUT: http://localhost:999/api_grp1/users/{userid}
 
