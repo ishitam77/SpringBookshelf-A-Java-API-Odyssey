@@ -7,6 +7,17 @@ SpringBookshelf is a dynamic backend project developed with Java, Spring Boot, a
 - MySQL Workbench
 - Postman
 - Eclipse Enterprise IDE
+# How To RUN:
+> Follow These Steps:
+1) Carefully Import the Project in your Eclipse
+2) Expand the project in your workspace
+3) Expand src/main/java
+4) Expand com package
+5) Open MySpringBootRunner.java
+6) Right click inside the MySpringBootRunner.java file
+7) Click Run as Java Application
+8) Then Open your Postman to send HTTP Requests
+9) Verify the Changes in your MYSQL Workbench
 # Postman HTTP Request (Example):
 > User CRUD:
 - GET : http://localhost:999/api_grp1/users
@@ -26,18 +37,18 @@ SpringBookshelf is a dynamic backend project developed with Java, Spring Boot, a
 > User POST & PUT Raw Data:
 - POST: http://localhost:999/api_grp1/users : <br/>
 {      
-        "name": "Kritika Maurya",
+       --- "name": "Kritika Maurya",
         "emailId": "mkriti12@gmail.com",
         "occupation": "Python Dev",
-        "books": [
+        "books": --- [
 		
 	{
    
-    "author": "Chetan Bhagat",
+   --- "author": "Chetan Bhagat",
     "isbn": 1538,
     "price": 2200,
     "title": "2-States",
-    "type": "Novel"
+    "type": "Novel" ---
 },
 {
     
