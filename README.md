@@ -35,20 +35,21 @@ SpringBookshelf is a dynamic backend project developed with Java, Spring Boot, a
 - DELETE: http://localhost:999/api_grp2/books/{bookid}
 # Postman HTTP Request Body (Example):
 > User POST & PUT Raw Data:
-- POST: http://localhost:999/api_grp1/users : <br/>
-{      
-       --- "name": "Kritika Maurya",
+- **POST: http://localhost:999/api_grp1/users :** <br/>
+```
+{     
+       "name": "Kritika Maurya",
         "emailId": "mkriti12@gmail.com",
         "occupation": "Python Dev",
-        "books": --- [
+        "books": [
 		
 	{
    
-   --- "author": "Chetan Bhagat",
+    "author": "Chetan Bhagat",
     "isbn": 1538,
     "price": 2200,
     "title": "2-States",
-    "type": "Novel" ---
+    "type": "Novel"
 },
 {
     
@@ -60,8 +61,10 @@ SpringBookshelf is a dynamic backend project developed with Java, Spring Boot, a
 }
 		]
     }
+```
 
-- PUT: http://localhost:999/api_grp1/users/{userid} : <br/>
+- **PUT: http://localhost:999/api_grp1/users/{userid} :** <br/>
+```
 {
         "name": "Ishita Maurya",
         "emailId": "mishi237@gmail.com",
@@ -84,8 +87,10 @@ SpringBookshelf is a dynamic backend project developed with Java, Spring Boot, a
 }
 		]
     }
+```
 
-- PUT: http://localhost:999/api_grp1/users/{userid}/books/{bookid} : <br/> 
+- **PUT: http://localhost:999/api_grp1/users/{userid}/books/{bookid} :** <br/>
+```
 {
       "author": "Chetan Bhagat",
       "isbn": 1538,
@@ -93,9 +98,11 @@ SpringBookshelf is a dynamic backend project developed with Java, Spring Boot, a
       "title": "2States",
       "type": "Novel"
     }
+```
 
 > Book POST & PUT Raw Data:   
-- POST: http://localhost:999/api_grp2/books : <br/>
+- **POST: http://localhost:999/api_grp2/books :** <br/>
+```
 {
   "title": "Sample Book",
   "author": "John Doe",
@@ -109,8 +116,10 @@ SpringBookshelf is a dynamic backend project developed with Java, Spring Boot, a
     "occupation": "Java Dev"
   }
 }
+```
 
-- PUT: http://localhost:999/api_grp2/books/{bookid} : <br/> 
+- **PUT: http://localhost:999/api_grp2/books/{bookid} :** <br/> 
+```
 {
    
     "author": "Chetan Bhagat",
@@ -119,4 +128,4 @@ SpringBookshelf is a dynamic backend project developed with Java, Spring Boot, a
     "title": "2-States",
     "type": "Novel"
 }
-
+```
