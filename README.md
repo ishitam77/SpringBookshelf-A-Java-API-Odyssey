@@ -8,8 +8,8 @@ SpringBookshelf is a dynamic backend project developed with Java, Spring Boot, a
 - Postman
 - Eclipse Enterprise IDE
 # Postman HTTP Request (Example):
-User CRUD:
-- GET : http://localhost:999/api_grp1/users
+-User CRUD:
+- - GET : http://localhost:999/api_grp1/users
 - GET : http://localhost:999/api_grp1/users/{userid}
 - POST: http://localhost:999/api_grp1/users
 - PUT: http://localhost:999/api_grp1/users/{userid}/books/{bookid}
