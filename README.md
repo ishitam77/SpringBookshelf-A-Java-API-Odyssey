@@ -8,7 +8,7 @@ SpringBookshelf is a dynamic backend project developed with Java, Spring Boot, a
 - Postman
 - Eclipse Enterprise IDE
 # Postman HTTP Request (Example):
-User CRUD:
+> User CRUD:
 - GET : http://localhost:999/api_grp1/users
 - GET : http://localhost:999/api_grp1/users/{userid}
 - POST: http://localhost:999/api_grp1/users
@@ -16,14 +16,14 @@ User CRUD:
 - PUT: http://localhost:999/api_grp1/users/{userid}
 - DELETE: http://localhost:999/api_grp1/users/{userid}
 
-Book CRUD:
+> Book CRUD:
 - GET : http://localhost:999/api_grp2/books
 - GET : http://localhost:999/api_grp2/books/{bookid}
 - POST: http://localhost:999/api_grp2/books
 - PUT: http://localhost:999/api_grp2/books/{bookid}
 - DELETE: http://localhost:999/api_grp2/books/{bookid}
 # Postman HTTP Request Body (Example):
-User POST & PUT Raw Data:
+> User POST & PUT Raw Data:
 - POST: http://localhost:999/api_grp1/users : <br/>
 {      
         "name": "Kritika Maurya",
@@ -83,7 +83,7 @@ User POST & PUT Raw Data:
       "type": "Novel"
     }
 
-Book POST & PUT Raw Data:   
+> Book POST & PUT Raw Data:   
 - POST: http://localhost:999/api_grp2/books : <br/>
 {
   "title": "Sample Book",
