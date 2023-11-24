@@ -66,27 +66,11 @@ SpringBookshelf is a dynamic backend project developed with Java, Spring Boot, a
 - **PUT: http://localhost:999/api_grp1/users/{userid} :** <br/>
 ```
 {
-        "name": "Ishita Maurya",
-        "emailId": "mishi237@gmail.com",
-        "occupation": "Java Developer",
-        "books": [
-		
-	{
-    "author": "Chetan Bhagat",
-    "isbn": 1438,
-    "price": 2070,
-    "title": "3 Mistakes of My Life",
-    "type": "Novel"
-},
-{
-    "author": "Arun Tiwari",
-    "isbn": 1434,
-    "price": 3210,
-    "title": "Wings of Fire",
-    "type": "AutoBiography"
+    "userId": 7,
+    "name": "Ishita Maurya",
+    "emailId": "ishitamaurya123@gmail.com",
+    "occupation": "Java Developer"
 }
-		]
-    }
 ```
 
 - **PUT: http://localhost:999/api_grp1/users/{userid}/books/{bookid} :** <br/>
@@ -111,9 +95,9 @@ SpringBookshelf is a dynamic backend project developed with Java, Spring Boot, a
   "type": "Fiction",
   "user": {
     "userId": 7,
-    "name": "John Doe",
+    "name": "Ishita Maurya",
     "emailId": "mishi237@gmail.com",
-    "occupation": "Java Dev"
+    "occupation": "Java Developer"
   }
 }
 ```
