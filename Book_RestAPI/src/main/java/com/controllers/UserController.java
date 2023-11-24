@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.entity.BookEntity;
 import com.entity.UserEntity;
-import com.service.BookService;
 import com.service.UserService;
 
 @RestController
@@ -54,31 +53,18 @@ public class UserController {
 
     
 
-@PutMapping("/users/{id}")
+    @PutMapping("/users/{id}")
     public ResponseEntity<String> updateUser(@PathVariable int id, @RequestBody UserEntity updatedUser) {
         try {
 
             updatedUser.setUserId(id);
-
- 
             userService.updateUser(updatedUser);
-            
-            // Update book details associated with the user
-            for (BookEntity updatedBook : updatedUser.getBooks()) {
-                // Set the user for each book
-                updatedBook.setUser(updatedUser);
-                // Update book details
-                userService.updateBook(updatedBook);
-            }
-
             return new ResponseEntity<>("User Updated Successfully!!", HttpStatus.OK);
         } catch (Exception e) {
             e.printStackTrace();
             return new ResponseEntity<>("User Not Found!!", HttpStatus.NOT_FOUND);
         }
     }
-
-
 
     @DeleteMapping("users/{userId}")
     public ResponseEntity<String> deleteUser(@PathVariable int userId) {
