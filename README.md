@@ -3,6 +3,7 @@ SpringBookshelf is a dynamic backend project developed with Java, Spring Boot, a
 # Technologies used:
 - Java
 - Spring Boot
+- RestAPI
 - JPA (Java Persistence API)
 - MySQL Workbench
 - Postman
